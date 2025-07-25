@@ -33,29 +33,22 @@
 &kp ESC     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8          &kp F9      &kp F10     &kp BSPC
 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                              &kp N6      &kp N7      &kp N8          &kp N9      &kp N0      &kp BSLH
 &kp TAB     &none       &kp S       &none       &none       &none                               &kp LEFT    &kp DOWN    &kp UP          &kp RIGHT   &kp SEMI    &kp SQT
-&kp LSHFT   &none       &none       &kp C       &none       &none       &kp LBKT    &kp RBKT    &kp MINUS   &kp EQUAL   &kp COMMA       &kp DOT     &kp FSLH    &kp RSHFT
+&kp LSHFT   &none       &none       &kp C       &none       &none       &kp LBRC    &kp RBRC    &kp MINUS   &kp EQUAL   &kp COMMA       &kp DOT     &kp FSLH    &kp RSHFT
                                     &kp LALT    &kp LCTRL   &kp LGUI    &kp SPACE   &kp RET     &none       &mo 2       &kp RALT
             >;
 
         };
 
         raise_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-//                     |      |      |      |        |  |       |      |       |       |
             display-name = "Raise";
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+&bt BT_CLR  &kp N1          &kp N2          &kp N3          &kp N4      &kp N5                              &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
+&kp TILDE   &kp EXCL        &kp AT          &kp HASH        &kp DLLR    &kp PRCNT                           &kp CARET   &kp AMPS    &kp ASTRK   &kp LPAR    &kp RPAR    &kp PIPE
+&kp TAB     &none           &kp S           &none           &none       &none                               &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp COLON   &kp DQT
+&kp LSHFT   &none           &none           &kp C           &none       &none       &kp LBRC    &kp RBRC    &kp UNDER   &kp PLUS    &kp LT      &kp GT      &kp QMARK   &kp RSHFT
+                                            &kp LALT        &kp LCTRL   &kp LGUI    &kp SPACE   &kp RET     &mo 1       &none       &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         extra_1 {
